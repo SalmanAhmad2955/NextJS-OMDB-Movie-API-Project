@@ -1,0 +1,143 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 6rem;
+  min-height: 100vh;
+}
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 300px; /* Adjust the width as desired */
+}
+
+.searchIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 09px;
+  background-color: #326660;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+.searchIcon:hover {
+  background-color: #3c7d70;
+}
+
+.searchButton {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.searchButton:hover {
+  background-color: darkgreen;
+}
+.moviesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.movieRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.movieCard {
+  width: calc(25% - 1rem); /* Adjust the width as needed */
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  /* background-color: #fff; */
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+}
+
+.movieThumbnail {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2/3; /* Adjust the aspect ratio as needed */
+}
+
+.movieThumbnail img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+.movieTitle {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.movieYear {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.movieDetails {
+  font-size: 1rem;
+  /* color: #ffffff; */
+  font-family: emoji;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.pageButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  /* background-color: transparent; */
+  cursor: pointer;
+}
+
+.pageButton:hover {
+  background-color: #f2f2f2;
+}
+
+.activePage {
+  background-color: #ccc;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  background-image: none;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
